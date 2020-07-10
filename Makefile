@@ -1,14 +1,16 @@
-
+CC = gcc -pthread
 
 default: all
 
 all: fork fork1 fork3 hello
 
 clean:
-	rm foo.txt
+	rm -f foo.txt
 
 distclean: clean
-	rm fork
-	rm fork1
-	rm fork3
-	rm hello
+	rm -f fork
+	rm -f fork1
+	rm -f fork3
+	rm -f hello
+
+
